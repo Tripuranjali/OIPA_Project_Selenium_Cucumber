@@ -4,11 +4,10 @@ import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-
-import cucumber.api.java.en.And;
-import cucumber.api.java.en.Given;
-import cucumber.api.java.en.Then;
-import cucumber.api.java.en.When;
+import io.cucumber.java.en.And;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 import pageObjects.LoginPage;
 
 public class Steps {
@@ -65,8 +64,8 @@ public class Steps {
 	   
 	}
 
-	@And("Minimize the browser")
-	public void minimize_the_browser() {
+	@And("Maximize the browser")
+	public void maxmize_the_browser() {
 	    driver.manage().window().maximize();
 	    
 	}
